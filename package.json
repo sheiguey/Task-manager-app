@@ -1,0 +1,23 @@
+{
+  "name": "taskmanager",
+  "version": "1.0.0",
+  "description": "a simple task manager application made with node and angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheiguey/Task-manager-app.git"
+  },
+  "keywords": [
+    "tasks",
+    "todolist"
+  ],
+  "author": "shiti franky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheiguey/Task-manager-app/issues"
+  },
+  "homepage": "https://github.com/sheiguey/Task-manager-app#readme"
+}
