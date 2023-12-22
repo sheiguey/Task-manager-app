@@ -1,0 +1,42 @@
+.form-card {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin: 10px auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form-card h2{
+     color: #00e0aa;
+  }
+  
+  input, textarea {
+    width: 70%;
+  }
+  
+  .addtask-button button{
+    padding: 7px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: 1px;
+    background-color: #00e0aa;
+    color: white;
+    cursor: pointer;
+  }
+
+  .addtask-button button:hover{
+     background-color: #11a07f;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+  }

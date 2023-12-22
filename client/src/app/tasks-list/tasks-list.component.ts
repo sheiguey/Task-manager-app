@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { TaskComponent } from './task/task.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-tasks-list',
   standalone: true,
-  imports: [],
+  imports: [TaskComponent,RouterLink],
   templateUrl: './tasks-list.component.html',
   styleUrl: './tasks-list.component.scss'
 })
-export class TasksListComponent {
+export class TasksListComponent implements OnInit{
+   ngOnInit(): void {
+     
+   }
 
 }

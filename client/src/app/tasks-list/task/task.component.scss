@@ -1,0 +1,21 @@
+.task-item{
+    border-bottom: 0.2px solid whitesmoke;
+    padding: 0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item_actions{
+    display: flex;
+    gap: 1em;
+}
+
+.action{
+  cursor: pointer;
+}
+
+.task-item_title{
+    margin: 1rem 0;
+    padding: 0;
+}

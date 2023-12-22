@@ -1,0 +1,29 @@
+.task-list{
+    list-style: none;
+    margin:0 0 3rem 0;
+    padding: 0;
+
+}
+
+.button-addtask_container{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.button-add_task{
+    padding: 0.7rem 2rem;
+    border-radius: 7px;
+    font-weight: bold;
+    border: 1px;
+    background-color: #00e0aa;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    bottom: 1.2rem;
+}
+
+.button-add_task:hover{
+    background-color: #11a07f;
+}
