@@ -4,7 +4,18 @@
   "description": "a simple task manager application made with node and angular",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install-server":"npm install --prefix backend",
+    "install-client":"npm install --prefix client",
+    "install": "npm run install-server & npm run install-client",
+    "watch-server":"npm run watch --prefix server",
+    "watch-client":"npm run watch --prefix client",
+    "watch":"npm run watch-server & npm run watch-client",
+    "generate-component":"npm run generate-component --prefix client",
+    "generate-service":"npm run generate-service --prefix client",
+    "test-server":"npm run test --prefix server",
+    "test-client":"npm run test --prefix client",
+    "test": "npm run test-server & npm run test-client",
+    "deploy":"npm run build --prefix client && npm run watch-server"
   },
   "repository": {
     "type": "git",

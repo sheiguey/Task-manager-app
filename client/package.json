@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "generate-component":"ng generate component",
+    "generate-service":"ng generate service",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
