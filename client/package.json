@@ -6,7 +6,7 @@
     "start": "ng serve",
     "generate-component":"ng generate component",
     "generate-service":"ng generate service",
-    "build": "ng build",
+    "build": "ng build --output-path=../server/public",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
