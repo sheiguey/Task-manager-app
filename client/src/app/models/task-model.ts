@@ -1,8 +1,8 @@
-export class Usermodel{
+export class taskModel{
     constructor(
-        public userEmail: string,
-        public userAge: number, 
-        public id?:number,
+        public id:number,
+        public title: string,
+        public description: string, 
         ) 
     {}
 

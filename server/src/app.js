@@ -14,11 +14,11 @@ app.use(cors({
     origin:"http://localhost:4200"
 })) 
 
-
+app.use(morgan('combined'));
 
 app.use(express.json());
 
-app.use('/v1',api)
+app.use('/v1', api)
 
 app.use(express.static(path.join(__dirname,'..','public','browser')))
 

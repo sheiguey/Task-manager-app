@@ -1,12 +1,12 @@
-<ul class="task-list">
-    <app-task></app-task>
-    <app-task></app-task>
-    <app-task></app-task>
-    <app-task></app-task>   
+<ul class="task-list" >
+    <ng-container *ngIf="loading==false">
+       <app-task *ngFor="let task of tasks" [task]="task"></app-task> 
+    </ng-container>
+    <app-loader *ngIf="loading"></app-loader>
 </ul>
 <div class="button-addtask_container">
     <button routerLink="/addtask" class="button-add_task">
-        + New task
+        + New task 
     </button>
 </div>
 
