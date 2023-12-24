@@ -1,18 +1,18 @@
 const taskData = require('./task.mongo')
 
 async function updateTask(task) {
-    const upDatetask ={
+    const newUpdatedTask = {
         ...task,
-        updated_at:new Date()
+        updated_at:new Date(),
     }
     try {
         await taskData.findOneAndUpdate({
-            id: upDatetask.id
-        }, task, {
+            id: +newUpdatedTask.id
+        }, newUpdatedTask, {
             upsert: true
         })
     } catch (err) {
-        console.error(`we could not save the task something went wrong ${err}`)
+        console.error(`we could not update the task something went wrong ${err}`)
     }
 }
 
@@ -57,21 +57,6 @@ async function getOneTask(id){
     }
 }
 
-async function updateTask(task) {
-    const newUpdatedTask = {
-        ...task,
-        updated_at:new Date(),
-    }
-    try {
-        await taskData.findOneAndUpdate({
-            id: +newUpdatedTask.id
-        }, newUpdatedTask, {
-            upsert: true
-        })
-    } catch (err) {
-        console.error(`we could not update the task something went wrong ${err}`)
-    }
-}
 
 async function deleteTask(id){
     try{
@@ -80,7 +65,6 @@ async function deleteTask(id){
         console.error(`we could not delete the task something went wrong ${err}`)
     }
 }
-
 
 
 module.exports={saveTask,getAllTask,updateTask,getOneTask,deleteTask}
