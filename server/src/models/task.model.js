@@ -64,7 +64,7 @@ async function updateTask(task) {
     }
     try {
         await taskData.findOneAndUpdate({
-            id: newUpdatedTask.id
+            id: +newUpdatedTask.id
         }, newUpdatedTask, {
             upsert: true
         })

@@ -1,5 +1,7 @@
 <div class="form-card">
     <h2>New task</h2>
+    <app-error *ngIf="error">{{error}}</app-error>
+    <app-success *ngIf="success">{{success}}</app-success>
     <form #task="ngForm" (ngSubmit)="onSubmitTask(task)" ngNativeValidate>
         <div class="form-group">
             <label for="title">Title</label>
@@ -10,7 +12,7 @@
             <textarea name="description" id="description" rows="5" required [(ngModel)]="description"></textarea>
         </div>
         <div class="addtask-button">
-            <button type="submit">save</button>
+            <button type="submit">save </button><app-loader *ngIf="loading===true"></app-loader>
         </div>
     </form>
 </div>

@@ -3,6 +3,7 @@
        <app-task *ngFor="let task of tasks" [task]="task"></app-task> 
     </ng-container>
     <app-loader *ngIf="loading"></app-loader>
+    <app-error *ngIf="error">{{error}}</app-error>
 </ul>
 <div class="button-addtask_container">
     <button routerLink="/addtask" class="button-add_task">

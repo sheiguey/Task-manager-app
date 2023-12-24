@@ -1,1 +1,7 @@
-<p>detail-task works!</p>
+<div class="detail-card" *ngIf="loading===false">
+    <h2>task detail: {{title}}</h2>
+    <p>description: {{description}}</p>
+    <p>creation date: {{createdDate | date:'medium'}}</p>
+    <p *ngIf="updatedDate">Last update date: {{updatedDate | date:'medium'}}</p>
+</div>
+<app-loader *ngIf="loading===true"></app-loader>

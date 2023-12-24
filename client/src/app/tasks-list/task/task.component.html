@@ -1,17 +1,15 @@
-<li class="task-item">
+<li class="task-item" routerLink="/taskdetail/{{task.id}}" (mouseover)="displayActions=true" (mouseleave)="displayActions=false">
   <div class="task-item_entities">
     <h2 class="task-item_title">{{task.title}}</h2>
     <p class="task-item_description">{{task.description}}</p>
   </div>
-  <div class="task-item_actions">
-    <a class="action" routerLink="/updatetask/1">
+  <div class="task-item_actions" *ngIf="displayActions===true">
+    <a class="action" routerLink="/updatetask/{{task.id}}" >
       <img src="../../../assets/icons/update.png" />
     </a>
-    <a class="action">
-      <img src="../../../assets/icons/detail.png" />
-    </a>
-    <a class="action">
+    <a class="action" (click)="onDeleteTask(task.id)">
       <img src="../../../assets/icons/delete.png" />
     </a>
   </div>
 </li>
+

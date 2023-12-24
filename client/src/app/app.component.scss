@@ -4,6 +4,10 @@
     "Segoe UI Symbol";
  }
 
+ .logo{
+   width: 4rem;
+ }
+
   main {
     width: 50%;
     margin: 2rem auto;
@@ -12,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:5rem 15rem;
+   
   }
 
   .header{
@@ -32,5 +36,4 @@
      color: white;
   }
  
- 
- 
+

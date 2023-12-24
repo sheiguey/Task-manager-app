@@ -4,6 +4,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+}
+
+.task-item:hover{
+    background-color: #09223d86
 }
 
 .task-item_actions{
@@ -14,7 +19,7 @@
 .action{
   cursor: pointer;
 }
-
+ 
 .task-item_title{
     margin: 1rem 0;
     padding: 0;

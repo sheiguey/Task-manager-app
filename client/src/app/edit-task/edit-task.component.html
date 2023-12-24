@@ -1,6 +1,7 @@
-<div class="form-card">
-    <h2>New task</h2>
-    <form #task="ngForm"  ngNativeValidate>
+<div class="form-card" *ngIf="loading===false">
+    <h2>edit task</h2>
+    <form #task="ngForm" (ngSubmit)="onUpdateTask(task)" ngNativeValidate>   
+        <input name="id" id="id" type="text" required [(ngModel)]="id" hidden>
         <div class="form-group">
             <label for="title">Title</label>
             <input name="title" id="title" type="text" required [(ngModel)]="title">
@@ -14,4 +15,5 @@
         </div>
     </form>
 </div>
+<app-loader *ngIf="loading===true"></app-loader>
 
