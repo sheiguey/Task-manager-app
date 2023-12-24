@@ -13,9 +13,9 @@
 
 # Navigate and use application.
 
-The mouseOver on any task item displays the update and delete icons.
-Click on a item will displays the task details.
-Click on the update icon to navigate to the update form to perform the update of the task.
-Click on the delete icon to delete the task.
-Click on add button at the botton of the taskslist to navigate to the createtask form.
+ The mouseOver on any task item displays the update and delete icons.
+ Click on a item will displays the task details.
+ Click on the update icon to navigate to the update form to perform the update of the task.
+ Click on the delete icon to delete the task.
+ Click on add button at the botton of the taskslist to navigate to the createtask form.
 
