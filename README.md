@@ -7,15 +7,13 @@
 5. In the terminal, run: npm run deploy this will build the frontend as a static file in the server folder and launch the server.
 6. Browse to the task manager frontend at localhost:8000 and perform your CRUD operations.
 
-# Navigate and use application.
-
-
+# Deploy the application on GCP
 
 # Navigate and use application.
 
 The mouseOver on any task item displays the update and delete icons.
 
-Click on a item will displays the task details.
+Click on a item item will displays the task details.
 
 Click on the update icon to navigate to the update form to perform the update of the task.
 
