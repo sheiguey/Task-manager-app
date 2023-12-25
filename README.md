@@ -14,10 +14,18 @@
 2. Run docker build -t todolist-app
 3. Run docker run -it -p 8000:8000 todolist-app
 
-        or
+or
 
 run directly my image by running : docker run -it -p 8000:8000 docker237/my-todolist-app
+
 # Deploy the application on GCP
+
+1. First sign up on the google cloud plateform and enable billing acount.
+2. Enable the Cloud Run API Service.
+3. Navigate to the Cloud Run Services and create a new service. In the service form you can choose the deployment option(select Deploy one revision from an existing container image and specify the container image "doker237/my-todolist-app") and complete the other properties of the form.
+4. Click Container(s), volumes, networking, security to set other optional settings.
+5. Click the displayed URL link to open the unique and stable endpoint of your deployed service.
+
 
 # Navigate and use application.
 
