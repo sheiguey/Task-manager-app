@@ -39,7 +39,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/client",
+            "outputPath": "../server/public",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -121,6 +121,6 @@
     }
   },
   "cli": {
-    "analytics": "3932f303-b3a3-44ae-969b-5442a987666f"
+    "analytics": false
   }
 }

@@ -8,12 +8,13 @@
     "install-client":"npm install --prefix client",
     "install": "npm run install-server & npm run install-client",
     "start-client":"npm run start --prefix client",
-    "start-server":"npn run start --prefix server",
+    "start-server":"npm run start --prefix server",
     "watch-server":"npm run watch --prefix server",
     "watch":"npm run watch-server & npm run watch-client",
     "generate-component":"npm run generate-component --prefix client",
     "generate-service":"npm run generate-service --prefix client",
     "test-server":"npm run test --prefix server",
+    "build-client":"npm run build --prefix client",
     "deploy":"npm run build --prefix client && npm run watch-server"
   },
   "repository": {

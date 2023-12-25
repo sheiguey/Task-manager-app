@@ -7,6 +7,16 @@
 5. In the terminal, run: npm run deploy this will build the frontend as a static file in the server folder and launch the server.
 6. Browse to the task manager frontend at localhost:8000 and perform your CRUD operations.
 
+
+# Docker
+
+1. Ensure you have Docker installed.
+2. Run docker build -t todolist-app
+3. Run docker run -it -p 8000:8000 todolist-app
+
+        or
+
+run directly my image by running : docker run -it -p 8000:8000 docker237/my-todolist-app
 # Deploy the application on GCP
 
 # Navigate and use application.

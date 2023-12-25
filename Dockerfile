@@ -2,19 +2,22 @@ FROM node:lts-alpine3.18
 
 WORKDIR /app
 
+COPY package*.json ./
+
 COPY client/package*.json client/
-RUN npm install --prefix client --omit=dev
+RUN npm run install-client 
 
-COPY backend/package*.json server/
-RUN npm install --prefix server --omit=dev
+RUN npm install -g @angular/cli
 
-COPY client/ client/
-RUN npm run build --prefix client
+
+COPY server/package*.json server/
+RUN npm run install-server --omit=dev
 
 COPY server/ server/
 
+COPY client/ client/
+RUN npm run build-client
+
 USER node
-
-CMD ["npm","start","--prefix","server"]
-
-EXPOSE 10000
+CMD ["npm","run","start-server"]
+EXPOSE 8000
